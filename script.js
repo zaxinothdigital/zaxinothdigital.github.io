@@ -54,7 +54,6 @@ var speed = 9;
 
 function updateSplash() {
   splash.style.color = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
-  
   r += dr * speed;
   g += dg * speed;
   b += db * speed;
@@ -63,31 +62,37 @@ function updateSplash() {
     r -= g - 255;
     dg = 0;
     dr = -1;
+    g = 255;
   }
   if (dr == -1 && r <= 0) {
     dr = 0;
     b = -r;
     db = 1;
+    r = 0;
   }
   if (db == 1 && b >= 255) {
     g -= b - 255;
     db = 0;
     dg = -1;
+    b = 255;
   }
   if (dg == -1 && g <= 0) {
     dg = 0;
     r = -g;
     dr = 1;
+    g = 0;
   }
   if (dr == 1 && r >= 255) {
     dr = 0;
     b -= r - 255;
     db = -1;
+    r = 255;
   }
   if (db == -1 && b <= 0) {
     db = 0;
     g = -r;
     dg = 1;
+    b = 0;
   }
   requestAnimationFrame(updateSplash);
 }
