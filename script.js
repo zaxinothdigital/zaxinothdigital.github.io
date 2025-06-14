@@ -93,3 +93,5 @@ function updateSplash() {
 }
 
 splash.innerHTML = splashTexts[Math.floor(Math.random() * splashTexts.length)];
+
+window.requestAnimationFrame(updateSplash);
