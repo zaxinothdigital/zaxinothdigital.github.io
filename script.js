@@ -90,7 +90,7 @@ function updateSplash() {
   }
   if (db == -1 && b <= 0) {
     db = 0;
-    g = -r;
+    g = -b;
     dg = 1;
     b = 0;
   }
