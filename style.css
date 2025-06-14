@@ -17,3 +17,11 @@ p, li {
 .body-container {
   max-width: 640px;
 }
+
+.very-large {
+  font-size: 50px;
+}
+
+.tiny {
+  font-size: 7px;
+} 
