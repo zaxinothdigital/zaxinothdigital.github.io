@@ -1,7 +1,7 @@
 var splash = document.querySelector('#splash');
 
 var splashTexts = [
-  'Also try <a href="https://swirlystone5877.nekoweb.org">swirlystone5877</a>!'
+  'Also try <a href="https://swirlystone5877.nekoweb.org">swirlystone5877</a>!',
   "zeet zeet",
   "why do they call it oven when you of in the cold food of out hot eat the food?",
   "minecraft splash text ripoff",
