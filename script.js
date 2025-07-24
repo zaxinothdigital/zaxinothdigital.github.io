@@ -29,7 +29,7 @@ var splashTexts = [
   "meh? məh.",
   "closed hihat electric chair sound effect",
   "i want a new wii so i can homebrew",
-  "bro nintendo went and promised to brick the switch 2",
+  "bro nintendo went and promised to brick the switch 2. and then they did. multiple times.",
   "nintendo literally made games that will expire when they move on to the switch 4",
   "go ahead and switch 2 your PC",
   "why does frozen pizza burn your mouth the most",
