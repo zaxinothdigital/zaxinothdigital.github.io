@@ -41,6 +41,7 @@ var splashTexts = [
   "null",
   "NaN",
   "cats are evil but i like them for some reason",
+  "get tungten cubed idiot",
 ];
 
 var r = 255;
