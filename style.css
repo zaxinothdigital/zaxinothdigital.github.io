@@ -24,3 +24,7 @@ p, li {
 .tiny {
   font-size: 7px;
 } 
+
+a {
+  color: #0AF;
+}
