@@ -113,6 +113,6 @@ for (var i = 0; i < tabButtons.length; i++) {
     for (var j = 0; j < tabs.length; j++) {
       tabs[j].classList.add("hidden");
     }
-    document.querySelector(`.tab[name=${e.target.name}]`).classList.remove("hidden");
+    document.querySelector(`.tab[name=${e.target.getAttribute('name')}]`).classList.remove("hidden");
   }
 }
