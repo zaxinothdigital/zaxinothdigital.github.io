@@ -102,3 +102,17 @@ function updateSplash() {
 splash.innerHTML = splashTexts[Math.floor(Math.random() * splashTexts.length)];
 
 window.requestAnimationFrame(updateSplash);
+
+
+var tabButtons = document.querySelectorAll("#tab-buttons .button");
+var tabs = document.querySelectorAll('#tabs .tab');
+for (var i = 0; i < tabButtons.length; i++) {
+  tabButtons[i].name = `tab${i}`;
+  tabs[i].name = `tab${i}`;
+  tabButtons[i].onclick = (e) => {
+    for (var j = 0; j < tabs.length; j++) {
+      tabs[j].classList.add("hidden");
+    }
+    document.querySelector(`.tab[name=${e.target.name}]`).classList.remove("hidden");
+  }
+}
