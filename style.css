@@ -14,8 +14,8 @@ p, li, .button {
 }
 
 .body-container {
-  max-width: 640px;
-  width: 640px;
+  width: calc(min(100vw, 640px));
+  box-sizing: border-box;
 }
 
 .very-large {
