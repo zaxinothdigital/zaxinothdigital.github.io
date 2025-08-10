@@ -115,7 +115,9 @@ for (var i = 0; i < tabButtons.length; i++) {
   tabButtons[i].onclick = (e) => {
     for (var j = 0; j < tabs.length; j++) {
       tabs[j].classList.add("hidden");
+      tabButtons[j].classList.remove("highlighted");
     }
     document.querySelector(`.tab[name=${e.target.getAttribute('name')}]`).classList.remove("hidden");
+    document.querySelector(`.button[name=${e.target.getAttribute('name')}]`).classList.add("highlighted");
   }
 }

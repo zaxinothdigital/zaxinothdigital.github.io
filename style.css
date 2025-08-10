@@ -3,6 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto; /* or overflow: scroll; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,7 @@ p, li, .button {
 .body-container {
   width: calc(min(100vw, 640px));
   box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
 .very-large {
