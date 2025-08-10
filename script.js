@@ -109,6 +109,9 @@ var tabs = document.querySelectorAll('#tabs .tab');
 for (var i = 0; i < tabButtons.length; i++) {
   tabButtons[i].setAttribute("name", `tab${i}`);
   tabs[i].setAttribute("name", `tab${i}`);
+  if (i > 0) {
+    tabs[i].classList.add("hidden");
+  }
   tabButtons[i].onclick = (e) => {
     for (var j = 0; j < tabs.length; j++) {
       tabs[j].classList.add("hidden");
