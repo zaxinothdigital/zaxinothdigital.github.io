@@ -121,3 +121,4 @@ for (var i = 0; i < tabButtons.length; i++) {
     document.querySelector(`.button[name=${e.target.getAttribute('name')}]`).classList.add("highlighted");
   }
 }
+document.querySelector("#tab-buttons").style.display = "block"
