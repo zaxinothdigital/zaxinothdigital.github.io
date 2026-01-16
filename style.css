@@ -42,6 +42,10 @@ a {
   background-color: none;
 }
 
+#tab-buttons {
+  display: none; // Javascript will change this
+}
+
 .button.highlighted {
   background-color: #333;
 }
