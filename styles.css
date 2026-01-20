@@ -1,6 +1,7 @@
 body {
   background-color: #000000;
   color: #00FF00;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -11,9 +12,28 @@ h1, h2, h3 {
   font-size: 50px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main, .head {
+  padding: 10px
+}
+
+.main {
+  flex-grow: 1;
+}
+
 iframe {
   margin: 0;
   border: 4px solid #0000FF;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
